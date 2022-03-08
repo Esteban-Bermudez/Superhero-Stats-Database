@@ -117,6 +117,7 @@ html {
     #logoText {
         flex-direction: column;
         padding: 0px;
+        line-height: 175%;
     }
     .overlay-content {
         top: 20%;
