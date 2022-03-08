@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>SuperHero Character Lookup</title>
+    <script src="project2.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+
+
+
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <div id="logoText">
+                <h1><span id="marvel">Marvel</span></h1>
+                <h1><span id="x">X</span></h1>
+                <h1><span id="dc">DC</span></h1>
+            </div>
+            <div id="logoSub">
+                <p>Stats for all characters of the Marvel and DC Comics Universe</p>
+            </div>
+            <form action="javascript: submit()">
+                <input type="text" placeholder="Search... (Spider-Man, Batman, Hulk, etc)" name="search" id="characterName">
+            </form>
+            
+
+            <button type="button" onclick="submit()"><i class="fa fa-search"></i></button>
+            <div id="errorText">
+
+            </div>
+        </div>
+    </div>
+
+
+    <button class="openBtn" onclick="openSearch()"><i class="fa fa-search"></i></button>
+
+    <div id="layoutContainer1">
+
+        <div class="title">
+            <img src="" class="publisherLogo">
+            <div class="titleName">
+
+            </div>
+        </div>
+
+        <div class="content">
+            <img src="" class="characterImage">
+            <div class="powerStats">
+                <ul>
+                    <h2 class="statsHeading">Power Stats</h2>
+                    <li>
+                        <div>
+                            <h2>Intelligence: </h2>
+                            <h2 class="Intelligence statistic"></h2>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Strength: </h2>
+                            <h2 class="Strength statistic"></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Speed: </h2>
+                            <h2 class="Speed statistic"></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Durability: </h2>
+                            <h2 class="Durability statistic"></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Power:</h2>
+                            <h2 class="Power statistic"></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Combat:</h2>
+                            <h2 class="Combat statistic"></h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="additionalInfo">
+            <h3>Additional Information:</h3>
+            <div class="infoData">
+                <p class="realName"> </p>
+                <p class="aliases"></p>
+                <p class="firstAppearance"></p>
+                <p class="occupation"></p>
+                <p class="base"></p>
+                <p class="groupAffiliation"></p>
+
+            </div>
+        </div>
+        <div class="footerData">
+            <p>Esteban Bermudez 2021</p>
+            <p>CSC 130 Project 2</p>
+            <p>Powered by Super Hero Data Base Api</p>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
