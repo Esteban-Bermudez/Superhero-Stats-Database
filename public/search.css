@@ -113,6 +113,14 @@ html {
     position: fixed;
 }
 
+#gitLogo {
+    position: fixed;
+    margin: 25px;
+    height: 70px;
+
+    color: white;
+}
+
 @media all and (max-width:503px) {
     #logoText {
         flex-direction: column;

@@ -142,7 +142,7 @@ h2.statistic {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 30px;
 }
 
 #errorText {
